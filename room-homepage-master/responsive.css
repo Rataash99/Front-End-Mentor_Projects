@@ -1,0 +1,152 @@
+@media(min-width: 375px){
+    ul{
+        gap: 2rem;
+    }
+}
+@media (min-width: 600px){
+    header{
+        display: flex;
+        flex-direction: row;
+        padding: 0.2rem 0rem 0rem 1.6rem;
+    }
+    a{
+        position: relative;
+        color: white;
+    }
+    a:after{
+        position:absolute;
+        z-index: 2000;
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: white;
+        margin: auto;
+        left: 0;
+        bottom: -4px;
+        transition: 0.3s;
+    }
+    a:hover:after{
+        width: 100%;
+    }
+    .hamburg,.close{
+        display: none;
+    }
+    .toggle-nav{
+        background-color: transparent;
+        transform:none;
+        width:fit-content;
+        position:static;
+        color:white;
+    }
+    .top-div{
+        padding: 6rem;
+    }
+    #top-hero{
+        src: url(./images/desktop-image-hero-1.jpg);
+    }
+    .bottom-div{
+        padding: 6rem;
+    }
+    .bottom:first-child{
+        content: url(./images/)
+    }
+    #top-hero-mob{
+        display:none;
+    }
+    #top-hero-desk{
+        display: block;
+        z-index: -10;
+    }
+}
+@media (min-width: 1000px){
+    .bottom{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .top-div{
+        height: auto;
+        width: 100vw;
+        padding: auto;
+    }
+    .bottom{
+        overflow: hidden;
+    }
+    .bottom-div{
+        padding: 3rem;
+        min-width: 25rem;
+    }
+}
+@media (min-width: 1240px){
+    header{
+        padding: 1.2rem;
+        padding-left: 3rem;
+    }
+    ul{
+        font-size: 1rem;
+    }
+    .top{
+        flex-direction: row;
+    }
+    .angle-div{
+        right: auto;
+        top: auto;
+        bottom: 0;
+        left: 0;
+    }
+    #angle1, #angle2{
+        padding: 1rem 1.8rem;
+    }
+    .top-div{
+        justify-content: center;
+        padding: 2.5rem
+    }
+    .top > img{
+        width: 54.3rem;
+        height: 40rem;
+    }
+    .bottom-div{
+        justify-content: center;
+    }
+}
+@media (min-width: 1400px){
+    .top-div{
+        padding : 5rem;
+    }
+    .top-div > h2{
+        font-size: 2rem;
+    }
+    .top > img{
+        width: 73.3rem;
+        height: 40rem;
+    }
+}
+@media (min-width: 1500px){
+    .top-div{
+        padding : 5rem 6.5rem 5rem 6.5rem;
+        gap: 2rem;
+    }
+    .top-div > h2{
+        font-size: 2.8rem;
+    }
+    #top-para{
+        font-size: 1rem;
+        font-weight: 200;
+        line-height: 1.4rem;
+    }
+    .top > img{
+        width: 98rem;
+        height: 41.6rem;
+    }
+    .bottom-div{
+        max-width: 39.2vw;
+    }
+    #bottom-para{
+        font-size: 1.1rem;
+        font-weight: 200;
+        line-height: 1.4rem;
+    }
+    #bottom-heading{
+        font-size: 0.9rem;
+        word-spacing: 3px;
+    }
+}

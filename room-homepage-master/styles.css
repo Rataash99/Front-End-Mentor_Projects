@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* border: 2px solid green; */
+    font-family : 'League Spartan', sans-serif;
+    font-size: 0.75rem;
+    background-color: black;
+}
+.container{
+    /* border: 1px solid blue; */
+    width: 100%;
+    max-height: 100vh;
+    transition-delay: 0.3s;
+    transition-timing-function: ease-in;
+}
+header{
+    position:absolute;
+    width: 100%;
+}
+.header-img{
+    /* border: 2px solid red; */
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.toggle-nav {
+    /* border: 2px solid red; */
+    position: fixed;
+    z-index: 100;
+    top : 0;
+    width: 100%;
+    height: 6.7rem;
+    background-color: hsl(0, 0%, 100%);
+    justify-content:space-between;
+    padding: 0rem 1.6rem;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    transform: translate(-200%);
+    transition:transform 0.4s ease-in-out;
+}
+ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    font-weight: 700;
+}
+a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+.active{
+    transform: translateX(0%);
+    left: 0;
+}
+#top-hero-mob{
+    width: 100%;
+}
+#top-hero-desk{
+    display: none;
+}
+.angle-div{
+    /* border: 2px solid green; */
+    background-color: black;
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: -3.66rem;
+}
+#angle1, #angle2{
+    padding: 1rem 1.2rem;
+}
+#angle1:hover, #angle2:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 27%);
+}
+.top{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+.top-div{
+    /* border: 2px solid blue; */
+    padding: 3rem 1.5rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+.top-div > h2{
+    font-size: 1.8rem;
+}
+.top-div > p{
+    color:hsl(0, 0%, 63%);
+    line-height: 1rem;
+    font-weight: 700;
+}
+.shop-now{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color:hsl(0, 0%, 27%);
+}
+.shop-now > span{
+    letter-spacing: 0.563rem;
+    font-weight: 700;
+    word-spacing: 0.13rem;
+    transition: 0.2s ease-in-out;
+}
+.shop-now:hover{
+    cursor: pointer;
+    color:hsl(0, 0%, 63%);
+}
+.bottom{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+}
+.bottom > img{
+    width: 100%;
+}
+.bottom-div{
+    /* border: 2px solid red; */
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+.bottom-div > h4{
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.bottom-div > p{
+    color:hsl(0, 0%, 63%);
+    line-height: 1rem;
+    font-weight: 700;
+}

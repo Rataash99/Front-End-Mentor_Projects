@@ -1,0 +1,105 @@
+@media (min-width : 500px){
+    .container{
+        gap: 3rem;
+        padding : 2.6rem;
+        border-radius: 30px 30px 200px 30px;
+        width: 30rem;
+    }
+    .date{
+        gap:1rem
+    }
+    label{
+        font-size: 0.8rem;
+    }
+    input{
+        width: 7rem;
+        padding: 1.2rem;
+        font-size: 1.4rem;
+    }
+    button{
+        left: auto;
+        transform: translateX(21.4rem);
+        padding: 1rem;
+        top: -33px;
+    }
+    img{
+        width: 2.2rem
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .content{
+        line-height: 5rem;
+    }
+}
+@media (min-width : 750px){
+    .container{
+        gap: 3.2rem;
+        padding : 3rem;
+        border-radius: 30px 30px 200px 30px;
+        width: 45rem;
+    }
+    .date{
+        gap:2rem
+    }
+    label{
+        font-size: 0.9rem;
+    }
+    input{
+        width: 9rem;
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+    button{
+        left: auto;
+        transform: translateX(34rem);
+        padding: 1.3rem;
+        top: -46px;
+    }
+    img{
+        width: 3rem
+    }
+    h1{
+        font-size: 6rem;
+    }
+    .content{
+        line-height: 6.5rem;
+    }
+}
+@media (min-width : 1000px){
+    .container{
+        gap: 3rem;
+        padding : 3.8rem 3.8rem 4rem 3.5rem;
+        border-radius: 30px 30px 200px 30px;
+        width: 55rem;
+    }
+    .date{
+        gap:2.rem
+    }
+    label{
+        font-size: 0.9rem;
+    }
+    input{
+        width: 11rem;
+        padding: 1.1rem;
+        font-size: 2rem;
+    }
+    button{
+        left: auto;
+        transform: translateX(43rem);
+        padding: 1.3rem;
+        top: -41px;
+    }
+    img{
+        width: 2.8rem
+    }
+    .mid{
+        /* transition-duration: 4s; */
+    }
+    h1{
+        font-size: 6.5rem;
+    }
+    .content{
+        line-height: 6.6rem;
+    }
+}

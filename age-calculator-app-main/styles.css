@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Open+Sans&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+    overflow: scroll;
+}
+.container{
+    /* border: 2px solid blue; */
+    border-radius: 20px 20px 110px 20px;
+    background-color:hsl(0, 0%, 100%);
+    box-shadow: 8px 8px 14px -28px black;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    gap: 4rem;
+    margin: auto;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.time{
+    /* border: 5px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.date{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 1rem;
+}
+
+.mid{
+    position:relative;
+}
+input{
+    border:1px solid hsl(0, 0%, 86%);
+    width: 5.5rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: hsl(0, 0%, 8%);
+    outline: none;
+}
+input:hover{
+    cursor: pointer;
+}
+hr{
+    border: 0.5px solid hsl(0, 0%, 86%);
+}
+button{
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    transform: translateX(8rem);
+    transition-duration: 1s;
+}
+img{
+    width: 1.5rem;
+}
+button:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.inactive-required{
+    font-size: 9px;
+    opacity: 0.5;
+    color: hsl(0, 100%, 67%);
+}
+
+label{
+    color: hsl(0, 1%, 44%);
+    font-size: 12px;
+    font-weight: 700;
+}
+.content{
+    line-height: 3.2rem;
+}
+h1{
+    font-style: italic;
+    font-weight:800;
+    font-size: 3rem;
+}
+h1 > span{
+    color:hsl(259, 100%, 65%);
+}

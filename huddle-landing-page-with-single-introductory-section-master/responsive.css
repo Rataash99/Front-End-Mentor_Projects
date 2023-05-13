@@ -1,0 +1,68 @@
+@media (min-width : 800px){
+    body{
+        padding: 2rem;
+        background-image: url(./images/bg-desktop.svg);
+    }
+    .container{
+        flex-direction: row;
+    }
+    header > svg{
+        max-width: 20vw;
+    }
+    .illustration-img{
+        max-width: 50%;
+    }
+    footer > div{
+        justify-content: end;
+    }
+}
+@media (Min-width: 1190px){
+    body{
+        padding: 3rem;
+    }
+    header > svg{
+        max-width: 15vw;
+    }
+    .illustration-img{
+        max-width: 100%;
+    }
+    .container{
+        gap: 5rem;
+        justify-content: center;
+    }
+    .main-content{
+        align-items: start;
+    }
+    h1{
+        /* border: 2px solid red; */
+        max-width: 39rem;
+        font-weight: 600;
+        font-size: 2.9rem;
+        text-align: left;
+        line-height: 4rem;
+    }
+    p{
+        font-size: 1.2rem;
+        max-width: 39rem;
+        text-align: left;
+    }
+    button{
+        padding:1rem 4.5rem
+    }
+}
+@media (min-width: 1400px){
+    body{
+        padding: 3rem 4.6rem;
+    }
+    header > svg{
+        max-width:12vw;
+    }
+    .container{
+        justify-content: space-between;
+    }
+    .illustration-img{
+        /* border: 2px solid red; */
+        padding-top: 2.4rem;
+        width: 65%;
+    }
+}

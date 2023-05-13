@@ -1,0 +1,44 @@
+@media only screen and (min-width: 900px){
+    .container{
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 1.4rem;
+        justify-content: center;
+    }
+    .second{
+        min-width: 30rem;
+        align-items: flex-start;
+    }
+    .hover-div{
+        right: 2rem;
+        top: -2.2rem;
+        bottom: auto;
+    }
+    .hover-div > p{
+        font-size: 2rem;
+    }
+    .hover-div > p > span{
+        font-size: 11px;
+    }
+    .triangle{
+        /* border: 2px solid red; */
+        position: absolute;
+        border-bottom-left-radius: 100%;
+        right: 0;
+        bottom: -1.1rem;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-right: 23px solid white;
+        border-bottom: 25px solid transparent;
+    }
+}
+@media only screen and (min-width: 1200px){
+    body{
+        background: url(./images/bg-desktop.png);
+        background-color: hsl(229, 57%, 11%);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
