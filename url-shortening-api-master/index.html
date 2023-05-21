@@ -17,10 +17,10 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="./images/logo.svg" />
+      <img class="logo" alt = "logo" src="./images/logo.svg" />
       <img
         src="./images/1814109_hamburger_menu_icon.png"
-        alt=""
+        alt="hamburg"
         class="hamburg"
       />
       <nav>
@@ -29,9 +29,10 @@
           <li>Prizing</li>
           <li>Resources</li>
         </ul>
+        <hr class = 'nav-hr'>
         <div class = "header-btn">
           <span class="login">Login</span>
-          <button class="sign-up btn">Sign Up</button>
+          <button id = 'sign-up' class="sign-up btn">Sign Up</button>
         </div>
       </nav>
     </header>
@@ -49,7 +50,7 @@
           <div class="hr-img">
             <img
               src="./images/illustration-working.svg"
-              alt="#"
+              alt="main-img"
               class="hr-img"
             />
           </div>
@@ -59,6 +60,7 @@
             <div class="input_search">
               <div class = 'div-shorten'>
                 <input id = "input-data" type="url" placeholder="Shorten a link here..." />
+                <span id = 'error'></span>
               </div>
               <input id = 'output-btn'class = 'btn2 input-btn' type="submit" value="Shorten It!" />
             </div>
@@ -74,7 +76,7 @@
           <div class="cards">
             <hr>
             <div class="card card1">
-              <img class = 'icon-img' src="./images/icon-brand-recognition.svg" />
+              <img class = 'icon-img'alt = "card-icon-img" src="./images/icon-brand-recognition.svg" />
               <h4>Brand Recognition</h4>
               <p>
                 Boost your brand recognition with each click. Generic links don’t
@@ -83,7 +85,7 @@
               </p>
             </div>
             <div class="card card2">
-              <img class = 'icon-img' src="./images/icon-detailed-records.svg" />
+              <img class = 'icon-img' alt = "card-icon-img" src="./images/icon-detailed-records.svg" />
               <h4>Detailed Records</h4>
               <p>
                 Gain insights into who is clicking your links. Knowing when and
@@ -92,7 +94,7 @@
               </p>
             </div>
             <div class="card card3">
-              <img class = 'icon-img' src="./images/icon-fully-customizable.svg" />
+              <img class = 'icon-img' alt = 'card-icon-img'src="./images/icon-fully-customizable.svg" />
               <h4>Fully Customizable</h4>
               <p>
                 Improve brand awareness and content discoverability through

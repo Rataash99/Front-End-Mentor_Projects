@@ -2,26 +2,48 @@
 
     header{
         /* border: 2px solid red; */
+        position: static;
         justify-content: flex-start;
-        gap: 2rem;
         padding: 3rem;
+        gap: 2rem;
         padding-top: 2rem;
     }
     nav{
+        /* border: 2px solid green; */
         width: 100%;
-        display: flex;
+        max-width: 100%;
+        transform: none;
+        position: static;
         justify-content: space-between;
         font-size: 0.8rem;
         color:hsl(257, 7%, 63%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background:transparent;
     }
-    li:hover,.login:hover{
+    .nav-hr{
+        display: none;
+    }
+    .header-btn{
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    #sign-up{
+        min-width: 7rem;
+        padding: 0.7rem;
+    }
+    nav > ul > li:hover{
+        cursor: pointer;
+        color:black;
+    }
+    .login:hover{
         color:black;
         cursor: pointer;
     }
     ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
         gap: 2rem;
     }
     .header-btn{
@@ -81,6 +103,9 @@
         align-items: flex-start;
         gap: 3rem;
     }
+    #list-data{
+        top: -4rem;
+    }
 }
 
 
@@ -111,7 +136,7 @@
         margin-top: 1.5rem;
     }
     .content{
-        padding: 6rem;
+        padding: 3rem 6rem 6rem 6rem;
         padding-bottom: 9rem;
     }
     .content-div > h3{
@@ -121,7 +146,7 @@
         /* border: 2px solid red; */
         max-width:100%;
         padding:2rem 3rem;
-        top: -9.1rem;
+        top: -6.1rem;
     }
     .input_search{
         flex-direction: row;
@@ -160,34 +185,58 @@
         padding: 2rem 6rem;
         justify-content: space-between;
     }
+    #list-data{
+        /* border: 2px solid red; */
+        max-width: 100%;
+        top: -5rem;
+        bottom: 0rem;
+    }
+    .li-hr{
+        display: none;
+    }
+    #list-data > li{
+        padding: 0.8rem 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .copy{
+        padding: 0.7rem;
+        min-width: 6rem;
+    }
+    .li-right-div{
+        flex-direction: row;
+        align-items: center; 
+    }
 }
 
 
 @media only screen and (min-width: 1400px){
 
     header{
-        padding:2.5rem 10.5rem;
+        padding:2.5rem 11rem;
     }
     .home-left{
         padding: 10.5rem
     }
     .hl-tagline{
+        min-width: 30rem;
         font-size: 4rem;
         line-height: 4.5rem;
     }
     .hr-img > img{
-        width: 45rem;
-        margin-right: 23rem;
+        width: 50rem;
+        margin-right:  80rem;
     }
     .hl-para{
         max-width: 25rem;
         font-size: 1rem;
     }
     .search{
-        top: -13.7rem;
+        top: -7.4rem;
     }
     .content{
-        padding:10.5rem;
+        padding:4rem 10.5rem 10.5rem 10.5rem;
     }
     .content-div > h3{
         font-size: 2rem;
@@ -226,18 +275,91 @@
     p{
         font-size: 0.9rem;
     }
+    #list-data{
+        max-width: 100%;
+        top: -6.5rem;
+    }
 }
 @media only screen and (min-width: 1460px){
+    .logo{
+        width: 8rem;
+    }
     .hr-img > img{
-        width: 55rem;
-        margin-right: 15rem;
+        width: 50rem;
+        margin-right: 30rem;
+    }
+    .hl-tagline{
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+    .hl-para{
+        /* border: 2px solid red; */
+        font-size: 1.2rem;
+        min-width: 36rem;
     }
     .search{
         padding:2.8rem 3rem;
-        top: -14.5rem;
+        top: -8.5rem;
     }
     input[type= "url"]{
-        width: 65vw;
+        width: 64vw;
         padding: 1.3rem;
+        font-size: 1rem;
+    }
+    #list-data{
+        top: -7.4rem;
+    }
+    #list-data > li{
+        padding: 1rem;
+    }
+    #error{
+        top: 4.2rem;
+    }
+    p,li,.btn, .btn2,.btn3{
+        font-size: 1rem;
+    }
+    nav > ul > li, .login{
+        font-size: 0.9rem;
+    }
+    .btn{
+        min-width: 8rem;
+        /* border: 2px solid red; */
+        padding: 0.8rem 1rem;
+    } 
+    .sign-up{
+        font-size: 0.9rem;
+        padding: 0.6rem ;
+    }
+    .content-div{
+        align-items: center;
+    }
+    .content-div > h3{
+        font-size: 2.3rem;
+    }
+    .content-div > p{
+        min-width: 30rem;
+    }
+    .card{
+        min-width: 22.4rem;
+        padding: 3.4rem 1.6rem 3.4rem 1.6rem;
+    }
+    .card > h4{
+        font-size: 1.4rem;
+    }
+    .boost > h3{
+        font-size: 2.3rem;
+    }
+    .footer{
+        padding: 4rem 11rem 4rem 11rem;
+    }
+    .footer > h1{
+        font-size: 2.3rem;
+    }
+    .f-content > h5{
+        font-size: 1.3rem;
+        font-weight: lighter;
+    }
+    .fa-brands{
+        font-size: 1.8rem;
     }
 }
