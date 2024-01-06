@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+#preview-card{
+    width: 100vw;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    overflow: hidden;
+    padding: 5rem 0;;
+}
+.img-mob{
+    width: 100%;
+    opacity: 0.5;
+    height: 100%;
+    display: block;
+}
+.img-desk{
+    display: none;
+}
+.header-img{
+    background-color: hsl(277, 64%, 61%);
+}
+#preview-card-main{
+    transition: all 0.3s ease-in-out;
+    background-color: hsl(244, 38%, 16%);
+    max-width: 21.7rem;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.highlight{
+    color: hsl(277, 64%, 61%);
+
+}
+h2{
+    font-size: 1.89rem;
+}
+#stats-main{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.card-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem;
+    flex-direction: column;
+    text-align: center;
+}
+.preview-heading{
+    /* font-size: 1rem; */
+}
+p,span{
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 1.6rem;
+}
+.stats span{
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 572px) {
+    #preview-card-main{
+        max-width: 70vw;
+    }
+}
+@media screen and (min-width: 842px){
+    #preview-card-main{
+        max-width: 40rem;
+    }
+    .preview-heading{
+        font-size: 2.1rem;
+    }
+    #stats-main{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    #preview-card-main{
+        max-width: 70rem;
+    }
+    #preview-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+    }
+    #preview-card-main{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+    .card-main{
+        gap: 2.4rem;
+        text-align: left;
+        max-width: 40%;
+    }
+    .img-mob{
+        display: none;
+    }
+    .img-desk{
+        opacity: 0.5;
+        height: 100%;
+        display: block;
+    }
+    #stats-main{
+        justify-content: flex-start;
+        width: 100%;
+        gap: 3rem;
+    }
+    .preview-para{
+        max-width: 24rem;
+    }
+}
+/* .attribution { font-size: 11px; text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); 
+}
+
+ */
